@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="website for Carnegie Mellon University Buggy Alumni Association"
+		/>
+		<meta
+			name="keywords"
+			content="website, buggy, alumni, CMU, Carnegie Mellon University"
+		/>
+		<meta name="author" content="CMU BAA" />
+		<title>CMU Buggy Alumni Association</title>
+		<!-- Bootstrap CSS link -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<!-- custom css -->
+		<link rel="stylesheet" type="text/css" href="./styles.css" />
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow&family=Bowlby+One&family=Dancing+Script&family=Gabarito&family=Inter:wght@300&family=Montserrat:wght@300&family=Playfair+Display:ital,wght@0,500;1,400&family=Raleway:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body onload="changeTableVisibility(0)" class="homepage">
+		<div class="header-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<span>CMU BUGGY ALUMNI ASSOCIATION</span>
+						<a href="index.html">
+							<div class="mobile-only">
+								<img
+									src="images/shield-in-circle.svg"
+									alt="Small Logo"
+									style="height: 30px"
+								/>
+								<span id="BAAText">BAA</span>
+								<span id="BuggyAlumniAssociationText"
+									>CMU BUGGY ALUMNI ASSOCIATION</span
+								>
+							</div>
+						</a>
+						<!-- No separate span for 'BAA', we will use CSS to inject this content -->
+					</div>
+					<div class="col-12 col-md-6 text-md-right race-info">
+						<span>Race Day in 2024: Apr 12 - 13</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="container-fluid">
+				<!-- Changed to container-fluid -->
+				<a class="navbar-brand desk-top-view" href="index.html">
+					<img
+						class="desk-top-view"
+						src="images/shield-in-circle.svg"
+						alt="Logo"
+						class="img-fluid"
+					/>
+					<!-- img-fluid for responsive image -->
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="whatisbuggy.html">What is Buggy</a>
+						</li>
+						<li class="nav-item dropdown active">
+							<a
+								class="nav-link dropdown-toggle"
+								href="history.html"
+								id="navbarDropdownMenuLink"
+							>
+								History
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About BAA</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Gallery</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- carousel -->
+
+		<div
+			id="racedayCarousel"
+			class="carousel slide"
+			data-bs-ride="carousel"
+			data-bs-interval="10000"
+		>
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#racedayCarousel"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#racedayCarousel"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#racedayCarousel"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item">
+					<img
+						src="./images/buggy21.jpg"
+						class="d-block w-100"
+						alt="raceday 2021"
+					/>
+				</div>
+				<div class="carousel-item active">
+					<img
+						src="./images/raceDayFringeA.jpg"
+						class="d-block w-100"
+						alt="fringe A"
+					/>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="./images/raceDayScreen.jpeg"
+						class="d-block w-100"
+						alt="raceday"
+					/>
+				</div>
+			</div>
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#racedayCarousel"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#racedayCarousel"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+			<div class="carouselText">
+				<div class="carouselHeading row">
+					<h1>Raceday is happening on site!</h1>
+				</div>
+				<div class="carouselBottomBtns row gx-3">
+					<div class="col carouselBtn">
+						<button class="btn" type="button">Course Map</button>
+					</div>
+					<div class="col carouselBtn">
+						<button class="btn" type="button">Leaderboard</button>
+					</div>
+					<div class="col carouselBtn">
+						<button class="btn" type="button">Livestream</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contentContainer">
+			<!-- Leaderboard -->
+			<!-- referenced this page: https://cmubuggy.org/history/raceday/2023 -->
+			<div class="container-fluid row leaderboardNSchedule">
+				<div
+					class="leaderboardContainer container-fluid col-12 col-sm-12 col-lg-8 gx-5"
+				>
+					<div class="row leaderboardHeading">
+						<h2 class="col-7 col-sm-6 col-lg-6">Leaderboard</h2>
+						<a class="col additionalLink">see full version</a>
+					</div>
+					<div class="leaderboardTabs">
+						<ul class="nav nav-tabs">
+							<li class="nav-item">
+								<a class="nav-link active" id="tab1" aria-current="page">Men</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="tab2">Women</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="tab3">All Gender</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tableContainer col-12">
+						<table id="tab1Table">
+							<tr>
+								<th>Place</th>
+								<th>Team</th>
+								<th>Buggy</th>
+								<th>Prelims</th>
+								<th>Finals</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>PiKA A</td>
+								<td>Banshee</td>
+								<td>2:09.26</td>
+								<td>2:09.39</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Spirit A</td>
+								<td>Seraph</td>
+								<td>2:12.65</td>
+								<td>2:11.49</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Apex A</td>
+								<td>Firefly</td>
+								<td>2:15.00</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Spirit B</td>
+								<td>Mapambazuko</td>
+								<td>2:17.65</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Fringe B</td>
+								<td>Eileen</td>
+								<td>2:20.77</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>CIA C</td>
+								<td>Emperor</td>
+								<td>2:20.03</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>CIA B</td>
+								<td>Roadrunner</td>
+								<td>2:18.55</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>SigNu A</td>
+								<td>Jaeger</td>
+								<td>2:18.20</td>
+								<td>pending</td>
+							</tr>
+						</table>
+						<table id="tab2Table">
+							<tr>
+								<th>Place</th>
+								<th>Team</th>
+								<th>Buggy</th>
+								<th>Prelims</th>
+								<th>Finals</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Spirit A</td>
+								<td>Seraph</td>
+								<td>2:42.92</td>
+								<td>2:35.28</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>CIA A</td>
+								<td>Equinox</td>
+								<td>2:36.67</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Fringe A</td>
+								<td>Baltic</td>
+								<td>2:44.49</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>PIKA A</td>
+								<td>Banshee</td>
+								<td>2:45.51</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>SigNu A</td>
+								<td>Jaeger</td>
+								<td>2:47.69</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>Apex A</td>
+								<td>Firefly</td>
+								<td>2:49.19</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>CIA B</td>
+								<td>Roadrunner</td>
+								<td>2:46.59</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>CIA C</td>
+								<td>Emperor</td>
+								<td>2:51.29</td>
+								<td>pending</td>
+							</tr>
+						</table>
+						<table id="tab3Table">
+							<tr>
+								<th>Place</th>
+								<th>Team</th>
+								<th>Buggy</th>
+								<th>Finals</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Apex A</td>
+								<td>Firefly</td>
+								<td>2:45.58</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>PIKA A</td>
+								<td>Raptor</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>CIA A</td>
+								<td>Equinox</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Spirit A</td>
+								<td>Inviscid</td>
+								<td>pending</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Fringe A</td>
+								<td>Burnout</td>
+								<td>pending</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="dividerContainer col-12">
+					<div class="divider"></div>
+				</div>
+
+				<!-- schedule at a glance -->
+				<div class="col-12 col-lg-4 schedule">
+					<div class="row">
+						<h2 class="col-12">Schedule at a Glance</h2>
+						<a class="col-12">see Spring Carnival Schedule</a>
+						<a class="col-12">see full Buggy schedule</a>
+					</div>
+					<div class="schedule">
+						<h3>Thursday, April 13</h3>
+						<div class="horizontalCards row">
+							<div class="col-5 col-lg-5 cardImg">
+								<img src="./images/buggyDesigns.jpeg" alt="buggy designs" />
+							</div>
+							<div class="customCardBody col col-lg">
+								<p class="scheduleTitle">Buggy Showcase</p>
+								<p class="scheduleLocation">
+									Weigand Gym (CUC 1st Floor) @ Noon
+								</p>
+								<p class="scheduleDescription">
+									View the latest buggy designs, talk with the teams, enjoy
+									kid-friendly buggy activities, and vote...
+								</p>
+							</div>
+						</div>
+						<div class="horizontalCards row">
+							<div class="col-5 col-lg-5 cardImg">
+								<img
+									src="./images/randomFoodPexels.jpg"
+									alt="food image taken from Pexels.com"
+								/>
+							</div>
+							<div class="customCardBody col">
+								<p class="scheduleTitle">Buggy Kickoff Dinner</p>
+								<p class="scheduleLocation">Fuel & Fuddle @ 8am</p>
+								<p class="scheduleDescription">
+									Come join the Buggy Alumni Association for our annual kickoff
+									dinner! Connect and catch up with...
+								</p>
+							</div>
+						</div>
+						<div class="horizontalCards row disappearOnLg">
+							<div class="col-5 col-lg-5 cardImg">
+								<img
+									src="./images/auction.jpg"
+									alt="food image taken from Pexels.com"
+								/>
+							</div>
+							<div class="customCardBody col">
+								<p class="scheduleTitle">Prelim Lead Truck Auction</p>
+								<p class="scheduleLocation">Online @ Until 11pm ET</p>
+								<p class="scheduleDescription">
+									Bid online on your favorite prelim heats for your chance at
+									the...
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- divider -->
+			<div class="dividerContainer">
+				<div class="divider"></div>
+			</div>
+			<!-- raceday resources -->
+			<div class="container-fluid row racedayResources">
+				<h2>Raceday Resources</h2>
+				<div class="row racedayResourcesCardsContainer gy-1">
+					<div class="col-12 col-md-4 indCardDiv">
+						<div class="card">
+							<div class="row g-0">
+								<!-- this is for making it horizontal -->
+								<!-- card-img-top class initially below -->
+								<div class="col-4 col-md-12 iconImgContainer">
+									<img
+										class="iconImg"
+										src="./images/calendarIcon.png"
+										alt="calendar icon from FreeIconsPNG"
+									/>
+									<!-- https://www.freeiconspng.com/images/calendar-icon-png -->
+								</div>
+								<div class="col-8 col-md-12">
+									<div class="card-body">
+										<p class="card-text cardCenterHeading">
+											<b>Heat Schedule</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 indCardDiv">
+						<div class="card">
+							<div class="row g-0">
+								<div class="col-4 col-md-12 iconImgContainer">
+									<img
+										class="iconImg"
+										src="./images/rosterIcon.png"
+										alt="roster icon"
+									/>
+									<!-- https://thenounproject.com/browse/icons/term/roster/ -->
+								</div>
+								<div class="col-8 col-md-12">
+									<div class="card-body">
+										<p class="card-text cardCenterHeading">
+											<b>Rosters</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 indCardDiv">
+						<div class="card">
+							<div class="row g-0">
+								<div class="col-4 col-md-12 iconImgContainer">
+									<img
+										class="iconImg"
+										src="./images/photoIcon.png"
+										alt="photo icon"
+									/>
+									<!-- https://www.shareicon.net/images-image-photo-picture-gallery-pictures-880210#google_vignette -->
+								</div>
+								<div class="col-8 col-md-12">
+									<div class="card-body">
+										<p class="card-text cardCenterHeading">
+											<b>Raceday Photos</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- divider -->
+			<div class="dividerContainer">
+				<div class="divider"></div>
+			</div>
+			<!-- recent activities -->
+			<div class="container-fluid row racedayResources">
+				<h2>Recent Activities</h2>
+				<div class="row">
+					<div class="col-12 col-md-4 indCardDiv">
+						<div class="card" id="rollsReportCard">
+							<div class="row g-0">
+								<!-- this is for making it horizontal -->
+								<!-- card-img-top class initially below -->
+								<div class="col-4 col-md-12 activitiesImgContainer">
+									<img
+										class="activitiesImg img-fluid"
+										src="./images/sunriseNov4.jpeg"
+										alt="image from BAA"
+									/>
+								</div>
+								<div class="col-8 col-md-12">
+									<div class="card-body">
+										<p class="card-text cardCenterHeading">
+											<b>Rolls Report</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="col-12 indCardDiv">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-4 col-md-4 activitiesImgContainer">
+										<img
+											class="activitiesImg"
+											src="./images/baaBeanie.png"
+											alt="image from BAA"
+										/>
+									</div>
+									<div class="col-8 col-md-8">
+										<div class="card-body">
+											<p class="cardCenterHeading">
+												<b>Buggy Merch!</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 indCardDiv">
+							<div class="card">
+								<div class="row g-0">
+									<div class="col-4 col-md-4 activitiesImgContainer">
+										<img
+											class="activitiesImg img-fluid"
+											src="./images/plaidBackground.png"
+											alt="CMU plaid background"
+										/>
+									</div>
+									<div class="col-8 col-md-8">
+										<div class="card-body">
+											<p class="card-text cardCenterHeading">
+												<b>Website Redesign Interview</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- divider -->
+			<div class="row dividerContainer">
+				<div class="divider"></div>
+			</div>
+			<!-- Membership -->
+			<div class="container-fluid membership">
+				<h2 class="col-12">Membership</h2>
+				<div class="membershipContainer row gy-4">
+					<div class="col-lg-8">
+						<div class="membershipImgContainer">
+							<div class="row btnContainer gy-2">
+								<div class="membershipText">
+									<p>
+										We are really grateful for our members and everyone that
+										support us. If you like what you are seeing, get involved by
+										any of the following ways!
+									</p>
+								</div>
+								<div class="col-12">
+									<button class="outsetBtn" type="button">
+										<div class="row">
+											<div class="col-2 btnIconImgContainer">
+												<!--div to separate image and text within the btn-->
+												<img
+													class="btnIconImg"
+													src="./images/dollarIcon.png"
+													alt="dollar icon"
+												/>
+												<!-- https://www.freeiconspng.com/img/3561 -->
+											</div>
+											<div class="col-10 btnTextContainer">
+												<p class="btnText">Donate any amount!</p>
+											</div>
+										</div>
+									</button>
+								</div>
+								<div class="col-12">
+									<button class="outsetBtn" type="button">
+										<div class="row">
+											<div class="col-2 btnIconImgContainer">
+												<!--div to separate image and text within the btn-->
+												<img
+													class="btnIconImg"
+													src="./images/discordIcon.png"
+													alt="discord icon"
+												/>
+												<!-- https://www.freeiconspng.com/img/43736 -->
+											</div>
+											<div class="col-10 btnTextContainer">
+												<p class="btnText">Join our Discord Channel!</p>
+											</div>
+										</div>
+									</button>
+								</div>
+
+								<div class="col-12">
+									<button class="outsetBtn" type="button">
+										<div class="row">
+											<div class="col-2 btnIconImgContainer">
+												<!--div to separate image and text within the btn-->
+												<img
+													class="btnIconImg"
+													src="./images/newsIcon.png"
+													alt="news icon"
+												/>
+												<!-- https://www.freeiconspng.com/downloadimg/13614 -->
+											</div>
+											<div class="col-10 btnTextContainer">
+												<p class="btnText">Click to Subscribe to Newsletter!</p>
+											</div>
+										</div>
+									</button>
+								</div>
+								<div class="col-12">
+									<button class="outsetBtn" type="button">
+										<div class="row">
+											<div class="col-2 btnIconImgContainer">
+												<!--div to separate image and text within the btn-->
+												<img
+													class="btnIconImg"
+													src="./images/contactIcon.png"
+													alt="contact icon"
+												/>
+												<!-- https://www.freeiconspng.com/downloadimg/13614 -->
+											</div>
+											<div class="col-10 btnTextContainer">
+												<p class="btnText">Contact Us!</p>
+											</div>
+										</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- membership types -->
+					<div class="col-lg-4">
+						<div class="col-12 membershipsContainer gy-2">
+							<div class="col-12">
+								<p>Annual Membership –– $20+</p>
+								<button class="outsetBtn">Get Annual Membership</button>
+							</div>
+							<div class="col-12">
+								<p>Golden Goose Lifetime Membership –– $1,000+</p>
+								<button class="outsetBtn">Get Lifetime Membership</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- divider -->
+			<div class="dividerContainer">
+				<div class="divider"></div>
+			</div>
+
+			<!-- homepage basics -->
+			<div class="row gx-2 homepageBasics">
+				<div class="col-6 overlayContainer">
+					<div class="card text-bg-dark">
+						<img
+							src="./images/BAAimage.jpeg"
+							class="overlayImg"
+							alt="image of BAA"
+						/>
+						<div class="card-img-overlay">
+							<h5 class="card-title">Who is BAA?</h5>
+							<p class="card-text">
+								<small
+									>We are an Alumni Intertest Group from Carnegie Mellon
+									University in Pittsburgh, PA.</small
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 overlayContainer">
+					<div class="card text-bg-dark">
+						<img
+							src="./images/buggy.jpg"
+							id="buggyImg"
+							class="overlayImg"
+							alt="image of buggy"
+						/>
+						<div class="card-img-overlay">
+							<h5 class="card-title">What is Buggy?</h5>
+							<p class="card-text">
+								<small
+									>Buggies are small, low, aerodynamic vehicles, powered only by
+									gravity and human pushers</small
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- divider -->
+			<div class="dividerContainer">
+				<div class="divider"></div>
+			</div>
+			<div class="podcastContainer">
+				<div class="col-12">
+					<iframe
+						style="border-radius: 12px"
+						src="https://open.spotify.com/embed/show/3wbaYb92dfzuWDUbOOxHWi?utm_source=generator"
+						width="100%"
+						height="200"
+						frameborder="0"
+						allowfullscreen=""
+						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+						loading="lazy"
+					></iframe>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-12 text-center text-md-left mb-3 mb-md-0">
+						<!-- Social icons for all sizes -->
+						<a href="your-facebook-link" class="social-icon"
+							><img
+								src="images/facebook.jpg"
+								height="30px"
+								width="30px"
+								alt="Facebook"
+						/></a>
+						<a href="your-youtube-link" class="social-icon"
+							><img
+								src="images/youtube.jpg"
+								height="30px"
+								width="30px"
+								alt="YouTube"
+						/></a>
+						<a href="your-rss-link" class="social-icon"
+							><img src="images/rss.jpg" height="30px" width="30px" alt="RSS"
+						/></a>
+						<a href="your-twitter-link" class="social-icon"
+							><img
+								src="images/twitter.jpg"
+								height="30px"
+								width="30px"
+								alt="Twitter"
+						/></a>
+						<a href="your-instagram-link" class="social-icon"
+							><img
+								src="images/insta.jpg"
+								height="30px"
+								width="30px"
+								alt="Instagram"
+						/></a>
+						<a href="your-spotify-link" class="social-icon"
+							><img
+								src="images/spotify.jpg"
+								height="30px"
+								width="30px"
+								alt="Spotify"
+						/></a>
+						<!-- Contact email shown on all sizes -->
+						<p class="contact-email">
+							Please contact
+							<a href="mailto:admin@cmubuggy.org">admin@cmubuggy.org</a> with
+							any questions or follow us on social media!
+						</p>
+					</div>
+					<div class="col-md-8 col-12">
+						<div class="row">
+							<div
+								class="col-md-4 col-6 text-center text-md-left mb-3 mb-md-0 mobileNotDisplay"
+							>
+								<a href="#" class="footer-link">Rolls Reports</a>
+								<a href="#" class="footer-link">Donation</a>
+								<a href="#" class="footer-link">Sweepstake Rules</a>
+								<a href="#" class="footer-link">How to Build a Buggy</a>
+							</div>
+							<div
+								class="col-md-4 col-6 text-center text-md-left mb-3 mb-md-0 mobileNotDisplay"
+							>
+								<a href="#" class="footer-link">BAA Membership</a>
+								<a href="#" class="footer-link">Sweepstake Committee</a>
+								<a href="#" class="footer-link"
+									>BAA Endowment Grant Application and Projects</a
+								>
+							</div>
+							<div
+								class="col-md-4 col-12 text-center text-md-left mb-3 mb-md-0"
+							>
+								<a href="#" class="footer-link">FAQ</a>
+								<a href="#" class="footer-link">Accessibility</a>
+								<a href="#" class="footer-link">Privacy Policy</a>
+								<a href="#" class="footer-link">Code of Conduct</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 text-center">
+						<p class="copyright">CMU Buggy Alumni Association © 2008–2023</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- custom JS for nav tabs -->
+		<script src="script.js"></script>
+
+		<!-- Bootstrap Popper and JS link -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.3/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
+</html>

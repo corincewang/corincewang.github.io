@@ -1,0 +1,726 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a {
+	color: gray;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.contentContainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.dividerContainer {
+	width: 98%;
+	position: relative;
+	left: -2vmin;
+	height: 0.8vmin;
+	margin: 5vmin auto;
+	background-color: #8b0000;
+}
+
+.inline-block {
+	display: inline-flex;
+}
+
+/* 1. nav bar css*/
+
+.header-top {
+	background-color: #8b0000;
+	color: white;
+	padding: 10px 0;
+	margin-top: 0;
+}
+
+.header-top a {
+	text-decoration: none;
+}
+
+.header-top span {
+	display: block; /* or your existing style */
+}
+
+.navbar {
+	padding: 0;
+	margin-top: 0;
+}
+
+.navbar-brand {
+	font-size: 1.5em;
+}
+
+.nav-link {
+	float: left;
+}
+
+#putToRight{
+	float:right;
+}
+
+.separation{
+    width: 85%;
+	display: none;
+    height: 2px;
+	background-color: #8B0000;
+	position: absolute;
+	top: 62%;
+	left: 13%;
+}
+
+
+.navbar-nav .nav-link {
+	
+	color: black;
+}
+.navbar-dark .navbar-toggler {
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+.race-info {
+	text-align: right;
+}
+
+.navbar-collapse {
+	/*border-bottom: 2px solid #8b0000; /* 2px solid border with your chosen color */
+	margin-top: 0;
+	padding: 0;
+}
+
+.nav-fill {
+	background-color: lightgray;
+	border-radius: 5px;
+}
+.breadcrumb-container {
+	padding-left: 0px;
+	padding-top: 0px;
+	margin: 0;
+	float: right;
+	position: relative;
+}
+.navgoingto {
+	color: black;
+	font-size: 12px;
+}
+.homelink {
+	color: black;
+}
+
+/* 2. smaller nav bar and logo */
+
+.navbar {
+	padding: 0.5rem 1rem; /* Reduces padding inside the navbar */
+}
+
+.navbar-brand {
+	height: 150px; /* Adjust the height of the logo container */
+	display: flex;
+	align-items: center; /* Centers the logo vertically */
+}
+
+.navbar-brand img {
+	height: 100%; /* Makes the logo fill the height of its container */
+	width: auto; /* Keeps the logo aspect ratio */
+}
+
+/* footer */
+.mobileNotDisplay {
+	display: none;
+}
+
+/* footer css */
+.footer {
+	background-color: #f2f2f2; /* or any color you prefer */
+	padding: 20px 0;
+}
+
+.social-icon {
+	/* Add styles for your social icons here */
+	margin-right: 5px; /* space between icons */
+}
+
+.footer-link {
+	display: block; /* each link on its own line */
+	margin-bottom: 5px; /* space between links */
+}
+
+.contact-email,
+.copyright {
+	margin-bottom: 10px;
+}
+.social-icon {
+	display: inline-block;
+	margin-right: 5px; /* Adjust the space between icons */
+	height: 30px; /* Adjust based on your design */
+	width: 30px; /* Adjust based on your design */
+}
+
+.social-icon img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain; /* This will make sure the image fits nicely within the dimensions */
+}
+
+/* carousel */
+.carouselText {
+	z-index: 3;
+	position: absolute;
+	margin: 0 auto;
+	width: 100%;
+	top: 20%;
+}
+
+.carouselText h1 {
+	font-family: "Gabarito", sans-serif;
+}
+
+.carouselHeading {
+	text-align: center;
+	width: 100%;
+	color: white;
+	margin: 0 auto;
+}
+
+.carouselBottomBtns {
+	position: absolute;
+	width: 100%;
+	top: 25vmin; /*40vmin*/
+	margin: 0 auto;
+}
+
+.carouselBottomBtns .carouselBtn {
+	width: 100%;
+	text-align: center;
+}
+
+.carouselBottomBtns .btn {
+	background-color: #9db0c7; /* #b6cbe5 */
+	color: white;
+}
+
+#racedayCarousel {
+	overflow: hidden;
+	height: 50vmin; /*80vmin*/
+}
+
+/* Leaderboard */
+
+.nav-tabs {
+	border-bottom: 1px solid #8b0000;
+	color: black;
+}
+
+/* the display is controlled in the script.js file. */
+/* specific tabs for js access 
+#tab2Table {
+	display: none;
+}
+
+#tab3Table {
+	display: none;
+}
+*/
+
+.nav-link {
+	color: black;
+}
+
+.nav-item .active {
+	border: 1px solid #8b0000;
+}
+
+.leaderboardContainer .tableContainer {
+	overflow: scroll;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	position: relative;
+	/* border: 1px solid gray; */
+}
+
+tr {
+	border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+th {
+	background-color: #878787;
+	color: white;
+}
+
+td,
+th {
+	padding: 0.4rem;
+}
+
+.leaderboardNSchedule {
+	margin-top: 6vmin;
+	margin-bottom: 3vmin;
+}
+
+.leaderboardNSchedule a {
+	font-family: "Raleway", sans-serif;
+}
+
+.leaderboardHeading {
+	position: relative;
+}
+
+.leaderboardHeading .additionalLink {
+	position: relative;
+	top: 1.8vmin;
+}
+
+.leaderboardTabs {
+	margin-top: 1vmin;
+}
+
+/* schedule at a glance */
+
+.schedule {
+	margin-top: 5vmin;
+}
+
+.horizontalCards {
+	margin-top: 1vmin;
+}
+
+.horizontalCards .cardImg img {
+	/* width: 20vmin;
+	height: 25vmin;  */
+	width: 100%;
+	height: 18vmin; /*40vmin*/
+	object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.horizontalCards .customCardBody p {
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+.horizontalCards .scheduleTitle {
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	/* font-size: 1.4rem; */
+	color: #ab0606;
+}
+
+.horizontalCards .scheduleLocation {
+	font-family: "Inter", sans-serif;
+	font-size: 0.6rem;
+	/* font-size: 0.8rem; */
+}
+
+.horizontalCards .scheduleDescription {
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	display: none;
+}
+
+/* raceday resources */
+.cardCenterHeading {
+	text-align: center;
+}
+
+.racedayResources {
+	margin-top: 2vmin;
+	margin-bottom: 3vmin;
+}
+
+.racedayResources .indCardDiv {
+	margin-bottom: 2vmin;
+}
+
+.racedayResourcesCardsContainer {
+	width: 100%;
+}
+
+.racedayResources .card {
+	width: 100%; /* the width would be the same as the col width*/
+}
+
+.racedayResources .card-body {
+	height: 16vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iconImgContainer {
+	height: 16vmin;
+	background-color: #f2f5ef;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iconImg {
+	width: 10vmin;
+}
+
+.activitiesImgContainer {
+	height: 16vmin;
+}
+
+.activitiesImg {
+	width: 100%; /* 15vmin*/
+	height: 16vmin; /*20vmin*/
+	object-fit: cover;
+}
+
+/* Membership */
+
+.membership {
+	margin-top: 2vmin;
+	width: 100%;
+}
+
+
+
+.membership .membershipImgContainer {
+	background-image: url("./images/BAAimage.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	padding: 3vmin;
+	margin-bottom: 2vmin;
+}
+
+.membership .btnContainer {
+	background-color: #4b4a4a4a;
+}
+
+.membership .membershipText {
+	color: white;
+}
+
+.outsetBtn {
+	border: 4px outset rgb(211, 209, 209);
+	border-radius: 5vmin;
+	width: 100%;
+	background-color: white;
+	color: #ab0606;
+}
+
+/*.btnIconImgContainer {
+    background-color: red;
+} */
+
+.btnIconImg {
+	width: 100%;
+	padding: 1vmin;
+	object-fit: cover;
+}
+
+.outsetBtn .btnTextContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.outsetBtn .btnText {
+	margin: 0 auto;
+}
+
+.membershipsContainer {
+	background-color: #8b0000;
+	color: white;
+	padding: 4vmin;
+	height: 100%;
+}
+
+.membershipsContainer .outsetBtn {
+	height: 8vmin;
+	margin-bottom: 3vmin;
+}
+
+/* phone Recent News */
+.carouselNewsContainer {
+	margin-top: 3vmin;
+	margin-bottom: 2vmin;
+}
+
+.carouselNewsContainer .card-img-top {
+	height: 50vmin;
+	border-top-right-radius: 3vmin;
+	border-top-left-radius: 3vmin;
+}
+
+.carouselNewsContainer .card {
+	text-align: center;
+	margin: auto;
+	border-top-right-radius: 3vmin;
+	border-top-left-radius: 3vmin;
+}
+
+/* homepage basics */
+.homepageBasics {
+	width: 100%;
+	/* margin-left: 3vmin; */
+}
+
+.homepageBasics .card-img-overlay {
+	/*this is the text over the image*/
+	background-color: #4b4a4a4a;
+	height: 35vmin;
+}
+
+.homepageBasics .card-img-overlay .card-title {
+	position: relative;
+	top: 60%;
+}
+
+.homepageBasics .card-img-overlay p {
+	display: none;
+}
+
+.homepageBasics .overlayImg {
+	/* this is the image */
+	height: 35vmin;
+	width: 100%;
+	object-fit: cover;
+}
+
+.homepageBasics .card-img-overlay p {
+	line-height: 0.8rem;
+}
+
+/* Mobile styles */
+@media (max-width: 576px) {
+	/* Specific targeting to hide the "CMU BUGGY ALUMNI ASSOCIATION" text on mobile */
+	.header-top .container-fluid .row > div:first-child > span {
+		display: none;
+	}
+
+	/* Show the "BAA" text and logo on mobile */
+	.mobile-only {
+		display: flex; /* Aligns items inline and centers them vertically */
+		align-items: center;
+	}
+
+	.mobile-only span {
+		/* Styling for the "BAA" text */
+		display: block;
+		color: white;
+		font-size: 1.5em; /* Adjust size as needed */
+	}
+
+	.mobile-only #BuggyAlumniAssociationText {
+		display: none;
+		background-color: blue;
+	}
+
+	.mobile-only img {
+		height: 30px; /* Small logo height */
+		margin-right: 10px; /* Space between the logo and the "BAA" text */
+	}
+
+
+	/* Hide the race info text on mobile */
+	.race-info span {
+		display: none;
+	}
+
+	/* Additional adjustments for mobile view */
+	.navbar-collapse {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 0;
+	}
+	.navgoingto {
+		display: none;
+	}
+	.desk-top-view {
+		display: none;
+	}
+	.navbarBox {
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-brand {
+		display: none;
+		height: 20px;
+	}
+
+	.navbar-brand img {
+		display: none;
+	}
+
+	.navbar-toggler {
+		position: relative;
+		top: -11vmin;
+		left: 85%;
+	}
+	.navbar-collapse {
+		position: relative;
+		top: -10vmin;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	/* Show the "BAA" text and logo on mobile */
+	.mobile-only {
+		display: none; /* Aligns items inline and centers them vertically */
+	}
+
+	.desk-top-view {
+		display: block;
+	}
+
+
+	.carouselBottomBtns {
+		top: 24vmin;
+	}
+
+	.racedayResources .card-body {
+		height: 10vmin;
+	}
+
+	.leaderboardContainer {
+		position: relative;
+		left: 0;
+	}
+
+	.horizontalCards .cardImg img {
+		/* width: 20vmin; */
+		height: 18vmin;
+		/* height: 18vmin; */
+	}
+
+	.schedule {
+		margin-top: 2vmin;
+	}
+
+	.horizontalCards .scheduleDescription {
+		display: block;
+	}
+
+	.racedayResources .card-body {
+		height: 10vmin;
+	}
+
+	.iconImgContainer {
+		height: 10vmin;
+	}
+
+	.iconImg {
+		width: 8vmin;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer .col-md-4:not(:last-child) {
+		margin-bottom: 20px; /* Add space between columns when they stack on mobile */
+	}
+	.mobileNotDisplay {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.footer .col-md-4:not(:last-child) {
+		margin-bottom: 20px; /* Add space between columns when they stack on mobile */
+	}
+
+	.mobile-only {
+		display: none;
+	}
+
+	.mobileNotDisplay {
+		display: block;
+	}
+
+	.carouselBottomBtns {
+		top: 28vmin; /*40vmin*/
+	}
+
+	.racedayResources .card-body {
+		height: 7vmin;
+	}
+
+	.activitiesImgContainer,
+	.activitiesImg {
+		height: 17vmin;
+	}
+
+	.outsetBtn,
+	.membershipsContainer .outsetBtn,
+	.btnIconImgContainer {
+		height: 7vmin;
+	}
+
+	.outsetBtn .btnIconImg {
+		width: 55%;
+		position: relative;
+		top: -0.7vmin;
+	}
+
+	#rollsReportCard .activitiesImgContainer,
+	#rollsReportCard .activitiesImg {
+		height: 30vmin;
+	}
+}
+
+
+@media screen and (min-width: 992px) {
+	.separation {
+		display: block;
+	}
+
+	.carouselBottomBtns {
+		top: 32vmin; /*40vmin*/
+	}
+
+	.disappearOnLg {
+		display: none;
+	}
+
+	.horizontalCards .cardImg img {
+		/* width: 20vmin; */
+		height: 22vmin;
+	}
+
+	.leaderboardNSchedule .dividerContainer {
+		display: none;
+	}
+
+	.schedule {
+		margin-top: 0;
+	}
+
+	.outsetBtn .btnIconImg {
+		width: 80%;
+	}
+
+	#racedayCarousel {
+		height: 75vmin;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.carouselBottomBtns {
+		top: 43vmin;
+	}
+
+	.outsetBtn,
+	.membershipsContainer .outsetBtn,
+	.btnIconImgContainer {
+		height: 8vmin;
+	}
+
+	.outsetBtn .btnIconImg {
+		width: 60%;
+	}
+
+	#racedayCarousel {
+		height: 85vmin;
+	}
+}

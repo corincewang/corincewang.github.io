@@ -1,0 +1,427 @@
+/* cmu red color (self-defined) */
+.bg-cmu {
+    background-color: #8B0000!important;
+}
+
+/* 1. General nav bar css*/
+.header-top {
+  background-color: #8B0000; 
+  color: white;
+  padding: 10px 0;
+  margin-top: 0;
+}
+
+.header-top a {
+  text-decoration: none;
+ }
+
+.header-top span {
+  display: block; /* or your existing style */
+}
+
+.navbar {
+    padding: 0;
+    margin-top: 0; 
+}
+
+.navbar-brand {
+    font-size: 1.5em;   
+}
+
+.nav-link{
+    float:left;
+}
+
+.navbar-nav .nav-link {
+    color: black; 
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.race-info {
+    text-align: right;
+}
+
+.navbar-collapse {
+    border-bottom: 2px solid #8B0000; /* 2px solid border with your chosen color */
+    margin-top: 0;
+    padding: 0;
+}
+
+
+.nav-fill{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.breadcrumb-container {
+    padding-left: 0px; 
+    padding-top: 0px; 
+    margin: 0;
+    float: right;
+    position: relative;
+}
+
+.navgoingto {
+    color: black;
+    font-size: 12px;
+}
+
+.homelink{
+    color:black;
+}
+
+
+/* 2. Smaller Navbar and Logo */
+.navbar {
+  padding: 0.5rem 1rem; /* Reduces padding inside the navbar */
+}
+
+.navbar-brand {
+  height: 150px; /* Adjust the height of the logo container */
+  display: flex;
+  align-items: center; /* Centers the logo vertically */
+}
+
+.navbar-brand img {
+  height: 100%; /* Makes the logo fill the height of its container */
+  width: auto; /* Keeps the logo aspect ratio */
+}
+
+
+/* 3. This CSS is for desktop and larger devices */
+.desktop-header {
+  display: block;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.race-info {
+  display: block;
+}
+
+/* 4. Base styles (for desktop) */
+.header-top .container-fluid .row > div:first-child span {
+  display: block; /* Show by default */
+}
+
+.race-info span {
+  display: block; /* Show by default */
+}
+.mobile-only{
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+.navbar{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Desktop and other styles... */
+
+/* Mobile styles */
+@media (max-width: 576px) {
+  /* Specific targeting to hide the "CMU BUGGY ALUMNI ASSOCIATION" text on mobile */
+  .header-top .container-fluid .row > div:first-child > span {
+    display: none;
+  }
+
+  /* Show the "BAA" text and logo on mobile */
+  .mobile-only {
+    display: flex; /* Aligns items inline and centers them vertically */
+    align-items: center;
+  }
+
+  .mobile-only img {
+    height: 30px; /* Small logo height */
+    margin-right: 10px; /* Space between the logo and the "BAA" text */
+  }
+
+  .mobile-only span {
+    /* Styling for the "BAA" text */
+    display: block;
+    color: white;
+    font-size: 1.5em; /* Adjust size as needed */
+  }
+
+  /* Hide the race info text on mobile */
+  .race-info span {
+    display: none;
+  }
+
+
+  /* Additional adjustments for mobile view */
+  .navbar-collapse {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+  .navgoingto {
+    display: none;
+  }
+  .desk-top-view{
+    display: none;
+  }
+  .navbarBox{
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-brand {
+    display: none;
+    height: 20px;
+  }
+  
+  .navbar-brand img {
+    display: none;
+  }
+
+   .navbar-toggler {
+    position: relative;
+    top: -11vmin;
+   }
+
+  .navbar-collapse{
+    position:relative;
+    top: -13vmin;
+  }
+
+}
+
+
+/* Main Content for Whatisbuggy STARTS HERE!!!!! */
+
+/* Header and carousel css */
+.header {
+    color: black;
+    text-align: left;
+    padding: 0;
+    margin-top: 0;
+    position: relative;
+    top: -8vmin;
+  }
+  
+.top_intro{
+    font-size: 216.66667%;
+    margin: 2% 0px 1% 0px;
+}
+
+.whatisbuggyheader{
+    font-size: 35px;
+  }
+
+.background_image{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+#carouselExampleCaptions{
+    margin: -2% 0 0 0;
+}
+
+    
+/* 1/3 section "What is Buggy" css */
+.top_container {
+    max-width: 80%;
+    margin: 0% 10% 20% 10%;
+}
+
+.whatIsBuggy{
+    max-width: 50%;
+    float: left;
+}
+
+.whenIsIt{
+    max-width: 45%;
+    float: right;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    padding: 10px 20px 20px 20px;
+    margin: 6% 0 0 0;
+}
+
+.card1{
+    width: 80%;
+    border-radius: 10px;
+    float: left;
+    margin: 0%;
+    max-height: 100%;
+    background-color:#8B0000;
+}
+
+
+.video{
+    width: 560px;
+    height: 370px;
+    clear: both;
+    margin: 1% 0 0 0;
+    max-width: 100%;
+    float: right;
+}
+
+.card_text{
+    color: white;
+    font-size: 13px;
+}
+
+#card_separation{
+    min-height: 100px;
+    max-height: 140px;
+    margin: 1% 0px 1% 0px;
+}
+
+#readmore{
+    background-color:#8B0000;
+    border-bottom: 3px solid;
+    border-color: #8B0000;
+    border-radius: 10px;
+    color:white;
+}
+
+
+
+/* 2/3 section "Begin Your Buggy Journey" css */
+.card2{
+    width: 100%;
+    margin: auto;
+    min-height: 100%;
+    background-color:#d9d9d9;
+}
+
+
+.middle_container{
+    max-width: 80%;
+    clear: both;
+    margin: 0% 10% 5% 10%;
+}
+
+#card_separation2{
+    margin: 1% 0px 1% 0px;
+}
+
+
+/* 3/3 section "Helpful Resources" css */
+
+.card-img-top{
+    height: 70%;
+}
+
+.third_container{
+    max-width: 80%;
+    clear: both;
+    margin: 0% 10% 5% 10%;
+}
+
+
+/* others */
+.separation{
+    width: 100%;
+    margin: auto;
+    height: 3;
+    background-color: #8B0000;
+}
+
+
+
+
+/* Only mobile css: */
+@media screen and (min-width: 768px) {
+	.onlyMobile {
+		display: none;
+	}
+}
+
+/* Only small screen css: */
+@media screen and (max-width: 768px){
+    .onlyLaptop{
+        display: none;
+    }
+
+    .whatIsBuggy{
+        min-width: 100%;
+        margin: auto;
+    }
+
+    .whenIsIt{
+        clear: both;
+        margin: 5% 0px 5% 0px;
+        min-width: 100%;
+    }
+
+    .video{  
+        min-width: 100%;
+        margin: 5% 0px 5% 0px;
+    }
+
+    .card1{
+        width: 100%;
+    }
+
+     .footer .col-md-4:not(:last-child) {
+      margin-bottom: 20px; /* Add space between columns when they stack on mobile */
+    }
+
+    .mobileNotDisplay{
+      display: none;
+    }
+
+    .onlyMobile{
+        margin: 5% 25% 10% 25%;
+    }
+
+    .mobilecarouseltext{
+        text-align: center;
+        margin: 3px;
+        font-size: 20px;
+    }
+
+    #card_separation{
+        margin: 2% 0px 2% 0px;
+    }
+
+    #card_mobile{
+        width: 100%
+    }
+
+}
+
+
+/* footer css */
+.footer {
+    background-color: #f2f2f2; /* or any color you prefer */
+    padding: 20px 0;
+  }
+  
+  .social-icon {
+    /* Add styles for your social icons here */
+    margin-right: 5px; /* space between icons */
+  }
+  
+  .footer-link {
+    display: block; /* each link on its own line */
+    margin-bottom: 5px; /* space between links */
+  }
+  
+  .contact-email, .copyright {
+    margin-bottom: 10px;
+  }
+  .social-icon {
+    display: inline-block;
+    margin-right: 5px; /* Adjust the space between icons */
+    height: 30px; /* Adjust based on your design */
+    width: 30px; /* Adjust based on your design */
+  }
+  
+  .social-icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* This will make sure the image fits nicely within the dimensions */
+  }
+  
